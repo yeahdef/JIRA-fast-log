@@ -12,7 +12,12 @@
 this.$ = this.jQuery = jQuery.noConflict(true);
 
 setInterval(function(){ 
+    // log work dialog
     $("#log-work-dialog #log-work-time-logged").attr('tabindex',1);
     $("#log-work-dialog #comment").attr('tabindex',2);
-    $("#log-work-dialog #log-work-submit").attr('tabindex',3);                                                
+    $("#log-work-dialog #log-work-submit").attr('tabindex',3);
+    // assign dialog
+    $("#assign-dialog #assignee-field").attr('tabindex',1);
+    $("#assign-dialog #comment").attr('tabindex',2);
+    $("#assign-dialog #assign-issue-submit").attr('tabindex',3);                                                
 }, 100);
